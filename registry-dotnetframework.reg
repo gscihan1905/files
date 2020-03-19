@@ -1,0 +1,15 @@
+REGEDIT4
+
+;Improved TLS support for .NET applications
+
+;https://technet.microsoft.com/en-us/library/security/2960358.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+"SchUseStrongCrypto"=dword:00000001
+
+;https://technet.microsoft.com/en-us/library/security/2960358.aspx
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v4.0.30319]
+"SchUseStrongCrypto"=dword:00000001
+
+;https://support.microsoft.com/en-gb/help/3154520/support-for-tls-system-default-versions-included-in-the-.net-framework-3.5-on-windows-8.1-and-windows-server-2012-r2
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework\v2.0.50727]
+"SystemDefaultTlsVersions"=dword:00000001
